@@ -19,7 +19,22 @@
                                       initWithNibName:@"ViewController" bundle:nil];
     [[self window] setRootViewController: viewController];
     //self.window.rootViewController = viewController;
+    
+    [self printMessage:@"Luke Skywalker"];
     return YES;
+}
+
+
+// Print Message Method
+
+-(void) printMessage:(NSString *) name {
+    UIAlertView *alertPopUp = [[UIAlertView alloc]
+                               initWithTitle:@"Alert"
+                               message:name
+                               delegate:nil
+                               cancelButtonTitle:@"Ok"
+                               otherButtonTitles:nil];
+    [alertPopUp show];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
