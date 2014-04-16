@@ -2,17 +2,23 @@
 //  AppDelegate.m
 //  HelloWorld
 //
-//  Created by student on 16/4/14.
+//  Created by Saurav on 16/4/14.
 //  Copyright (c) 2014 ISS. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    ViewController *viewController = [[ViewController alloc]
+                                      initWithNibName:@"ViewController" bundle:nil];
+    [[self window] setRootViewController: viewController];
+    //self.window.rootViewController = viewController;
     return YES;
 }
 							
