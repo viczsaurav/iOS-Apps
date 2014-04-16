@@ -10,7 +10,11 @@
 
 @class LoginModel;
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate> {
+    UITextField *userID;
+    UITextField *password;
+    LoginModel *loginModel;
+}
 
 @property (strong,nonatomic) LoginModel *loginModel;
 @property (strong,nonatomic) IBOutlet UITextField *userID;

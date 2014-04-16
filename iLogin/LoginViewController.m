@@ -26,11 +26,15 @@
     return self;
 }
 
+
+// This will help dismiss the keyboard when the "Return" button is pressed
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     _loginModel = [[LoginModel alloc] init];
+    _userID.delegate = self;
+    _password.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +46,8 @@
 // My Methods
 
 -(IBAction)login:(id) sender {
+    [_userID resignFirstResponder];
+    [_password resignFirstResponder];
     NSString *name = _userID.text;
     NSString *pass = _password.text;
     NSLog(@"Username is %@ and password is %@ ",name,pass);
@@ -65,4 +71,9 @@
     NSLog(@"The message is for %@",name);
 }
 
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [_userID resignFirstResponder];
+    [_password resignFirstResponder];
+    return YES;
+}
 @end
