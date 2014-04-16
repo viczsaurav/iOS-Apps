@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0AC180DC-70F6-47EF-BC17-95536D417481</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iLogin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>68E82B6D-151D-49DE-B8D3-2AA6F54D8CBB</key>
+		<string>https://github.com/viczsaurav/iOS-Apps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iLogin/iLogin.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>68E82B6D-151D-49DE-B8D3-2AA6F54D8CBB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/viczsaurav/iOS-Apps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>68E82B6D-151D-49DE-B8D3-2AA6F54D8CBB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>68E82B6D-151D-49DE-B8D3-2AA6F54D8CBB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Apps</string>
+		</dict>
+	</array>
+</dict>
+</plist>

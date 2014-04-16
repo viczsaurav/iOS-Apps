@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F5F4BB418FEBFF100A941DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4BB318FEBFF100A941DA /* Foundation.framework */; };
+		3F5F4BB618FEBFF100A941DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4BB518FEBFF100A941DA /* CoreGraphics.framework */; };
+		3F5F4BB818FEBFF100A941DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4BB718FEBFF100A941DA /* UIKit.framework */; };
+		3F5F4BBE18FEBFF100A941DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BBC18FEBFF100A941DA /* InfoPlist.strings */; };
+		3F5F4BC018FEBFF100A941DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BBF18FEBFF100A941DA /* main.m */; };
+		3F5F4BC418FEBFF100A941DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BC318FEBFF100A941DA /* AppDelegate.m */; };
+		3F5F4BC618FEBFF100A941DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BC518FEBFF100A941DA /* Images.xcassets */; };
+		3F5F4BCD18FEBFF100A941DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4BCC18FEBFF100A941DA /* XCTest.framework */; };
+		3F5F4BCE18FEBFF100A941DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4BB318FEBFF100A941DA /* Foundation.framework */; };
+		3F5F4BCF18FEBFF100A941DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4BB718FEBFF100A941DA /* UIKit.framework */; };
+		3F5F4BD718FEBFF100A941DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BD518FEBFF100A941DA /* InfoPlist.strings */; };
+		3F5F4BD918FEBFF100A941DA /* iLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BD818FEBFF100A941DA /* iLoginTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F5F4BD018FEBFF100A941DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F5F4BA818FEBFF100A941DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F5F4BAF18FEBFF100A941DA;
+			remoteInfo = iLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F5F4BB018FEBFF100A941DA /* iLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5F4BB318FEBFF100A941DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F5F4BB518FEBFF100A941DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F5F4BB718FEBFF100A941DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F5F4BBB18FEBFF100A941DA /* iLogin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iLogin-Info.plist"; sourceTree = "<group>"; };
+		3F5F4BBD18FEBFF100A941DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F5F4BBF18FEBFF100A941DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F5F4BC118FEBFF100A941DA /* iLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLogin-Prefix.pch"; sourceTree = "<group>"; };
+		3F5F4BC218FEBFF100A941DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F5F4BC318FEBFF100A941DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F5F4BC518FEBFF100A941DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F5F4BCB18FEBFF100A941DA /* iLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5F4BCC18FEBFF100A941DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F5F4BD418FEBFF100A941DA /* iLoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iLoginTests-Info.plist"; sourceTree = "<group>"; };
+		3F5F4BD618FEBFF100A941DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F5F4BD818FEBFF100A941DA /* iLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iLoginTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F5F4BAD18FEBFF100A941DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F4BB618FEBFF100A941DA /* CoreGraphics.framework in Frameworks */,
+				3F5F4BB818FEBFF100A941DA /* UIKit.framework in Frameworks */,
+				3F5F4BB418FEBFF100A941DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5F4BC818FEBFF100A941DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F4BCD18FEBFF100A941DA /* XCTest.framework in Frameworks */,
+				3F5F4BCF18FEBFF100A941DA /* UIKit.framework in Frameworks */,
+				3F5F4BCE18FEBFF100A941DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F5F4BA718FEBFF100A941DA = {
+			isa = PBXGroup;
+			children = (
+				3F5F4BB918FEBFF100A941DA /* iLogin */,
+				3F5F4BD218FEBFF100A941DA /* iLoginTests */,
+				3F5F4BB218FEBFF100A941DA /* Frameworks */,
+				3F5F4BB118FEBFF100A941DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F5F4BB118FEBFF100A941DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F4BB018FEBFF100A941DA /* iLogin.app */,
+				3F5F4BCB18FEBFF100A941DA /* iLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F5F4BB218FEBFF100A941DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F4BB318FEBFF100A941DA /* Foundation.framework */,
+				3F5F4BB518FEBFF100A941DA /* CoreGraphics.framework */,
+				3F5F4BB718FEBFF100A941DA /* UIKit.framework */,
+				3F5F4BCC18FEBFF100A941DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F5F4BB918FEBFF100A941DA /* iLogin */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F4BC218FEBFF100A941DA /* AppDelegate.h */,
+				3F5F4BC318FEBFF100A941DA /* AppDelegate.m */,
+				3F5F4BC518FEBFF100A941DA /* Images.xcassets */,
+				3F5F4BBA18FEBFF100A941DA /* Supporting Files */,
+			);
+			path = iLogin;
+			sourceTree = "<group>";
+		};
+		3F5F4BBA18FEBFF100A941DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F4BBB18FEBFF100A941DA /* iLogin-Info.plist */,
+				3F5F4BBC18FEBFF100A941DA /* InfoPlist.strings */,
+				3F5F4BBF18FEBFF100A941DA /* main.m */,
+				3F5F4BC118FEBFF100A941DA /* iLogin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F5F4BD218FEBFF100A941DA /* iLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F4BD818FEBFF100A941DA /* iLoginTests.m */,
+				3F5F4BD318FEBFF100A941DA /* Supporting Files */,
+			);
+			path = iLoginTests;
+			sourceTree = "<group>";
+		};
+		3F5F4BD318FEBFF100A941DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F4BD418FEBFF100A941DA /* iLoginTests-Info.plist */,
+				3F5F4BD518FEBFF100A941DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F5F4BAF18FEBFF100A941DA /* iLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5F4BDC18FEBFF100A941DA /* Build configuration list for PBXNativeTarget "iLogin" */;
+			buildPhases = (
+				3F5F4BAC18FEBFF100A941DA /* Sources */,
+				3F5F4BAD18FEBFF100A941DA /* Frameworks */,
+				3F5F4BAE18FEBFF100A941DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iLogin;
+			productName = iLogin;
+			productReference = 3F5F4BB018FEBFF100A941DA /* iLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F5F4BCA18FEBFF100A941DA /* iLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5F4BDF18FEBFF100A941DA /* Build configuration list for PBXNativeTarget "iLoginTests" */;
+			buildPhases = (
+				3F5F4BC718FEBFF100A941DA /* Sources */,
+				3F5F4BC818FEBFF100A941DA /* Frameworks */,
+				3F5F4BC918FEBFF100A941DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F5F4BD118FEBFF100A941DA /* PBXTargetDependency */,
+			);
+			name = iLoginTests;
+			productName = iLoginTests;
+			productReference = 3F5F4BCB18FEBFF100A941DA /* iLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F5F4BA818FEBFF100A941DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ISS;
+				TargetAttributes = {
+					3F5F4BCA18FEBFF100A941DA = {
+						TestTargetID = 3F5F4BAF18FEBFF100A941DA;
+					};
+				};
+			};
+			buildConfigurationList = 3F5F4BAB18FEBFF100A941DA /* Build configuration list for PBXProject "iLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F5F4BA718FEBFF100A941DA;
+			productRefGroup = 3F5F4BB118FEBFF100A941DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F5F4BAF18FEBFF100A941DA /* iLogin */,
+				3F5F4BCA18FEBFF100A941DA /* iLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F5F4BAE18FEBFF100A941DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F4BBE18FEBFF100A941DA /* InfoPlist.strings in Resources */,
+				3F5F4BC618FEBFF100A941DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5F4BC918FEBFF100A941DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F4BD718FEBFF100A941DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F5F4BAC18FEBFF100A941DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F4BC418FEBFF100A941DA /* AppDelegate.m in Sources */,
+				3F5F4BC018FEBFF100A941DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5F4BC718FEBFF100A941DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F4BD918FEBFF100A941DA /* iLoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F5F4BD118FEBFF100A941DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F5F4BAF18FEBFF100A941DA /* iLogin */;
+			targetProxy = 3F5F4BD018FEBFF100A941DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F5F4BBC18FEBFF100A941DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5F4BBD18FEBFF100A941DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F5F4BD518FEBFF100A941DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5F4BD618FEBFF100A941DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F5F4BDA18FEBFF100A941DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F5F4BDB18FEBFF100A941DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F5F4BDD18FEBFF100A941DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLogin/iLogin-Prefix.pch";
+				INFOPLIST_FILE = "iLogin/iLogin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F5F4BDE18FEBFF100A941DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLogin/iLogin-Prefix.pch";
+				INFOPLIST_FILE = "iLogin/iLogin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F5F4BE018FEBFF100A941DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iLogin.app/iLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLogin/iLogin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iLoginTests/iLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3F5F4BE118FEBFF100A941DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iLogin.app/iLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iLogin/iLogin-Prefix.pch";
+				INFOPLIST_FILE = "iLoginTests/iLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F5F4BAB18FEBFF100A941DA /* Build configuration list for PBXProject "iLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5F4BDA18FEBFF100A941DA /* Debug */,
+				3F5F4BDB18FEBFF100A941DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F5F4BDC18FEBFF100A941DA /* Build configuration list for PBXNativeTarget "iLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5F4BDD18FEBFF100A941DA /* Debug */,
+				3F5F4BDE18FEBFF100A941DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F5F4BDF18FEBFF100A941DA /* Build configuration list for PBXNativeTarget "iLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5F4BE018FEBFF100A941DA /* Debug */,
+				3F5F4BE118FEBFF100A941DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F5F4BA818FEBFF100A941DA /* Project object */;
+}
