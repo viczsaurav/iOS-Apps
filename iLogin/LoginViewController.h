@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class LoginModel;
+
 @interface LoginViewController : UIViewController
+
+@property (strong,nonatomic) LoginModel *loginModel;
+@property (strong,nonatomic) IBOutlet UITextField *userID;
+@property (strong,nonatomic) IBOutlet UITextField *password;
+
+- (IBAction)login:(id) sender;
+- (void) printMessage:(NSString *) name;
 
 @end

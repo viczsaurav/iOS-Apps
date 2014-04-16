@@ -21,6 +21,7 @@
 		3F5F4BD918FEBFF100A941DA /* iLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BD818FEBFF100A941DA /* iLoginTests.m */; };
 		3F5F4BE518FEC08400A941DA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE318FEC08400A941DA /* LoginViewController.m */; };
 		3F5F4BE618FEC08400A941DA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE418FEC08400A941DA /* LoginViewController.xib */; };
+		3F5F4BE918FEC74600A941DA /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE818FEC74600A941DA /* LoginModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3F5F4BE218FEC08400A941DA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
 		3F5F4BE318FEC08400A941DA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		3F5F4BE418FEC08400A941DA /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		3F5F4BE718FEC74600A941DA /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		3F5F4BE818FEC74600A941DA /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				3F5F4BE218FEC08400A941DA /* LoginViewController.h */,
 				3F5F4BE318FEC08400A941DA /* LoginViewController.m */,
 				3F5F4BE418FEC08400A941DA /* LoginViewController.xib */,
+				3F5F4BE718FEC74600A941DA /* LoginModel.h */,
+				3F5F4BE818FEC74600A941DA /* LoginModel.m */,
 				3F5F4BC518FEBFF100A941DA /* Images.xcassets */,
 				3F5F4BBA18FEBFF100A941DA /* Supporting Files */,
 			);
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5F4BC418FEBFF100A941DA /* AppDelegate.m in Sources */,
+				3F5F4BE918FEC74600A941DA /* LoginModel.m in Sources */,
 				3F5F4BC018FEBFF100A941DA /* main.m in Sources */,
 				3F5F4BE518FEC08400A941DA /* LoginViewController.m in Sources */,
 			);

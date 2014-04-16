@@ -7,10 +7,13 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginModel.h"
 
 @interface LoginViewController ()
+@synthesize loginModel,userID, password;
 
 @end
+
 
 @implementation LoginViewController
 
@@ -33,6 +36,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// My Methods
+
+-(IBAction)login:(id) sender {
+    NSString *name = userID.text;
+    NSString *pass = password.text;
+    
 }
 
 @end
