@@ -19,6 +19,8 @@
 		3F5F4BCF18FEBFF100A941DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4BB718FEBFF100A941DA /* UIKit.framework */; };
 		3F5F4BD718FEBFF100A941DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BD518FEBFF100A941DA /* InfoPlist.strings */; };
 		3F5F4BD918FEBFF100A941DA /* iLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BD818FEBFF100A941DA /* iLoginTests.m */; };
+		3F5F4BE518FEC08400A941DA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE318FEC08400A941DA /* LoginViewController.m */; };
+		3F5F4BE618FEC08400A941DA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE418FEC08400A941DA /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		3F5F4BD418FEBFF100A941DA /* iLoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iLoginTests-Info.plist"; sourceTree = "<group>"; };
 		3F5F4BD618FEBFF100A941DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F5F4BD818FEBFF100A941DA /* iLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iLoginTests.m; sourceTree = "<group>"; };
+		3F5F4BE218FEC08400A941DA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		3F5F4BE318FEC08400A941DA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		3F5F4BE418FEC08400A941DA /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				3F5F4BC218FEBFF100A941DA /* AppDelegate.h */,
 				3F5F4BC318FEBFF100A941DA /* AppDelegate.m */,
+				3F5F4BE218FEC08400A941DA /* LoginViewController.h */,
+				3F5F4BE318FEC08400A941DA /* LoginViewController.m */,
+				3F5F4BE418FEC08400A941DA /* LoginViewController.xib */,
 				3F5F4BC518FEBFF100A941DA /* Images.xcassets */,
 				3F5F4BBA18FEBFF100A941DA /* Supporting Files */,
 			);
@@ -221,6 +229,7 @@
 			files = (
 				3F5F4BBE18FEBFF100A941DA /* InfoPlist.strings in Resources */,
 				3F5F4BC618FEBFF100A941DA /* Images.xcassets in Resources */,
+				3F5F4BE618FEC08400A941DA /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 			files = (
 				3F5F4BC418FEBFF100A941DA /* AppDelegate.m in Sources */,
 				3F5F4BC018FEBFF100A941DA /* main.m in Sources */,
+				3F5F4BE518FEC08400A941DA /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  iLogin
 //
-//  Created by student on 16/4/14.
+//  Created by Saurav on 16/4/14.
 //  Copyright (c) 2014 ISS. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +15,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.loginViewController = [[LoginViewController alloc]
+                                initWithNibName:@"LoginViewController"
+                                bundle:nil];
+    self.window.rootViewController = self.loginViewController;
+    self.window.backgroundColor = [UIColor blueColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
