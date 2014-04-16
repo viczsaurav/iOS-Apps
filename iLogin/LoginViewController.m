@@ -10,7 +10,7 @@
 #import "LoginModel.h"
 
 @interface LoginViewController ()
-@synthesize loginModel,userID, password;
+//@synthesize loginModel,userID, password;
 
 @end
 
@@ -30,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _loginModel = [[LoginModel alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,9 +42,27 @@
 // My Methods
 
 -(IBAction)login:(id) sender {
-    NSString *name = userID.text;
-    NSString *pass = password.text;
+    NSString *name = _userID.text;
+    NSString *pass = _password.text;
+    NSLog(@"Username is %@ and password is %@ ",name,pass);
+    BOOL result = [_loginModel verifyUser:name andPassword:pass];
+    if (!result) {
+        [self printMessage:@"Incorrect UserID or Password"];
+    } else {
+        [self printMessage:@"Welcome to the Application"];
+    }
     
+}
+
+-(void) printMessage:(NSString *)name {
+    UIAlertView *alertPopup = [[UIAlertView alloc]
+                               initWithTitle:@"Alert"
+                               message:name
+                               delegate:nil
+                               cancelButtonTitle:@"Ok"
+                               otherButtonTitles: nil];
+    [alertPopup show];
+    NSLog(@"The message is for %@",name);
 }
 
 @end
