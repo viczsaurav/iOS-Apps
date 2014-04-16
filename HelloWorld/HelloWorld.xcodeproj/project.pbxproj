@@ -21,6 +21,7 @@
 		3F5F4B9218FEB6D100A941DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5F4B7418FEB6D100A941DA /* UIKit.framework */; };
 		3F5F4B9A18FEB6D100A941DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4B9818FEB6D100A941DA /* InfoPlist.strings */; };
 		3F5F4B9C18FEB6D100A941DA /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4B9B18FEB6D100A941DA /* HelloWorldTests.m */; };
+		3F5F4BA618FEB95500A941DA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BA518FEB95500A941DA /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3F5F4B9718FEB6D100A941DA /* HelloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorldTests-Info.plist"; sourceTree = "<group>"; };
 		3F5F4B9918FEB6D100A941DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F5F4B9B18FEB6D100A941DA /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		3F5F4BA518FEB95500A941DA /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				3F5F4B8618FEB6D100A941DA /* ViewController.m */,
 				3F5F4B8818FEB6D100A941DA /* Images.xcassets */,
 				3F5F4B7718FEB6D100A941DA /* Supporting Files */,
+				3F5F4BA518FEB95500A941DA /* ViewController.xib */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				3F5F4B8918FEB6D100A941DA /* Images.xcassets in Resources */,
 				3F5F4B7B18FEB6D100A941DA /* InfoPlist.strings in Resources */,
+				3F5F4BA618FEB95500A941DA /* ViewController.xib in Resources */,
 				3F5F4B8418FEB6D100A941DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
