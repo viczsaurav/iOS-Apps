@@ -14,7 +14,7 @@
 @end
 
 
-@implementation LoginViewController 
+@implementation LoginViewController
 @synthesize loginModel,userID, password;
 
 
@@ -52,12 +52,17 @@
     NSString *name = userID.text;
     NSString *pass = password.text;
     NSLog(@"Username is %@ and password is %@ ",name,pass);
-    BOOL result = [loginModel verifyUser:name andPassword:pass];
-    if (!result) {
-        [self printMessage:@"Incorrect UserID or Password"];
+    if (([loginModel isEmpty:name] | [loginModel isEmpty:pass])) {
+        [self printMessage:@"UserID or Password cannot be Empty"];
     } else {
-        [self printMessage:@"Welcome to the Application"];
+        BOOL result = [loginModel verifyUser:name andPassword:pass];
+        if (!result) {
+            [self printMessage:@"Incorrect UserID or Password"];
+        } else {
+            [self printMessage:@"Welcome to the Application"];
+        }
     }
+    
     
 }
 

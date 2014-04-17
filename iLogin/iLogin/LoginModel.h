@@ -11,5 +11,6 @@
 @interface LoginModel : NSObject
 
 - (BOOL) verifyUser:(NSString *) userID andPassword:(NSString *) password;
+- (BOOL) isEmpty:(NSString *) string;
 
 @end

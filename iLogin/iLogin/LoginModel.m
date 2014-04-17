@@ -18,4 +18,12 @@
     }
 }
 
+- (BOOL) isEmpty:(NSString *)string {
+    BOOL isEmpty = false;
+    if ([string isEqualToString:@""]) {
+        isEmpty = true;
+    }
+    return isEmpty;
+}
+
 @end
