@@ -22,7 +22,6 @@
 		3F5F4BE518FEC08400A941DA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE318FEC08400A941DA /* LoginViewController.m */; };
 		3F5F4BE618FEC08400A941DA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE418FEC08400A941DA /* LoginViewController.xib */; };
 		3F5F4BE918FEC74600A941DA /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F4BE818FEC74600A941DA /* LoginModel.m */; };
-		3F5F4CB61900010300A941DA /* LandingPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F4CB51900010300A941DA /* LandingPage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		3F5F4BE418FEC08400A941DA /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
 		3F5F4BE718FEC74600A941DA /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		3F5F4BE818FEC74600A941DA /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
-		3F5F4CB51900010300A941DA /* LandingPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +120,6 @@
 				3F5F4BE218FEC08400A941DA /* LoginViewController.h */,
 				3F5F4BE318FEC08400A941DA /* LoginViewController.m */,
 				3F5F4BE418FEC08400A941DA /* LoginViewController.xib */,
-				3F5F4CB51900010300A941DA /* LandingPage.xib */,
 				3F5F4BE718FEC74600A941DA /* LoginModel.h */,
 				3F5F4BE818FEC74600A941DA /* LoginModel.m */,
 				3F5F4BC518FEBFF100A941DA /* Images.xcassets */,
@@ -237,7 +234,6 @@
 			files = (
 				3F5F4BBE18FEBFF100A941DA /* InfoPlist.strings in Resources */,
 				3F5F4BC618FEBFF100A941DA /* Images.xcassets in Resources */,
-				3F5F4CB61900010300A941DA /* LandingPage.xib in Resources */,
 				3F5F4BE618FEC08400A941DA /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
