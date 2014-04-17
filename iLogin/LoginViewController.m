@@ -14,7 +14,7 @@
 @end
 
 
-@implementation LoginViewController
+@implementation LoginViewController 
 @synthesize loginModel,userID, password;
 
 
