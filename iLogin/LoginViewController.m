@@ -10,12 +10,13 @@
 #import "LoginModel.h"
 
 @interface LoginViewController ()
-//@synthesize loginModel,userID, password;
 
 @end
 
 
 @implementation LoginViewController
+@synthesize loginModel,userID, password;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,9 +33,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    _loginModel = [[LoginModel alloc] init];
-    _userID.delegate = self;
-    _password.delegate = self;
+    loginModel = [[LoginModel alloc] init];
+    userID.delegate = self;
+    password.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,12 +47,12 @@
 // My Methods
 
 -(IBAction)login:(id) sender {
-    [_userID resignFirstResponder];
-    [_password resignFirstResponder];
-    NSString *name = _userID.text;
-    NSString *pass = _password.text;
+    [userID resignFirstResponder];
+    [password resignFirstResponder];
+    NSString *name = userID.text;
+    NSString *pass = password.text;
     NSLog(@"Username is %@ and password is %@ ",name,pass);
-    BOOL result = [_loginModel verifyUser:name andPassword:pass];
+    BOOL result = [loginModel verifyUser:name andPassword:pass];
     if (!result) {
         [self printMessage:@"Incorrect UserID or Password"];
     } else {
@@ -72,8 +73,8 @@
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
-    [_userID resignFirstResponder];
-    [_password resignFirstResponder];
+    [userID resignFirstResponder];
+    [password resignFirstResponder];
     return YES;
 }
 @end
