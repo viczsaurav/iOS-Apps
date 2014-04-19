@@ -126,6 +126,14 @@
                         <outlet property="lecturerField" destination="Jq2-Aw-Q9f" id="yLi-EH-FOO"/>
                     </connections>
                 </viewController>
+                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Course Details" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="H64-MH-Cr2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.5792145286" green="0.70579190729999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="902" y="64"/>
