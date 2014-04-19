@@ -10,12 +10,15 @@
 
 #import "DetailViewController.h"
 
+#import "DataCourse.h"
+
 @interface MasterViewController () {
     NSMutableArray *_objects;
 }
 @end
 
 @implementation MasterViewController
+@synthesize courses = _courses;
 
 - (void)awakeFromNib
 {
@@ -25,11 +28,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    courses = [DataCourse getExistingCourses];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self tableView] reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,15 +67,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return [courses count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    //NSDate *object = _objects[indexPath.row];
+    //cell.textLabel.text = [object description];
+    
+    [[cell textLabel] setText:[[courses objectAtIndex:[indexPath row]] courseID]];
     return cell;
 }
 
@@ -107,6 +119,8 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+        
+        [[segue destinationViewController] setEditingCourse:[courses objectAtIndex:[indexPath row]]];
     }
 }
 

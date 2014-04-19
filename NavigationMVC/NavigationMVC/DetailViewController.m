@@ -7,12 +7,16 @@
 //
 
 #import "DetailViewController.h"
+#import "DataCourse.h"
+
 
 @interface DetailViewController ()
 - (void)configureView;
 @end
 
 @implementation DetailViewController
+@synthesize idField = _idField ,descField = _descField,lecturerField = _lecturerField;
+@synthesize editingCourse = _editingCourse;
 
 #pragma mark - Managing the detail item
 
@@ -48,4 +52,49 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [_idField setText:[_editingCourse courseID]];
+    [_descField setText:[_editingCourse courseDesc]];
+    [_lecturerField setText:[_editingCourse lecturer]];
+    
+    [[self navigationItem] setTitle: [editingCourse courseID]];
+}
+
+- (void) viewWillDisappear:(BOOL)animated {
+    [idField resignFirstResponder];
+    [descField resignFirstResponder];
+    [lecturerField resignFirstResponder];
+    
+    [_editingCourse setCourseID:[_idField text]];
+    [_editingCourse setCourseDesc:[_descField text]];
+    [_editingCourse setLecturer:[_lecturerField text]];
+}
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,6 +22,7 @@
 		3FD6392F1902D57900719F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6390E1902D57900719F23 /* UIKit.framework */; };
 		3FD639371902D57900719F23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FD639351902D57900719F23 /* InfoPlist.strings */; };
 		3FD639391902D57900719F23 /* NavigationMVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD639381902D57900719F23 /* NavigationMVCTests.m */; };
+		3FD639441902D62600719F23 /* DataCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD639431902D62600719F23 /* DataCourse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		3FD639341902D57900719F23 /* NavigationMVCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationMVCTests-Info.plist"; sourceTree = "<group>"; };
 		3FD639361902D57900719F23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FD639381902D57900719F23 /* NavigationMVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationMVCTests.m; sourceTree = "<group>"; };
+		3FD639421902D62600719F23 /* DataCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCourse.h; sourceTree = "<group>"; };
+		3FD639431902D62600719F23 /* DataCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCourse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				3FD639201902D57900719F23 /* MasterViewController.m */,
 				3FD639221902D57900719F23 /* DetailViewController.h */,
 				3FD639231902D57900719F23 /* DetailViewController.m */,
+				3FD639421902D62600719F23 /* DataCourse.h */,
+				3FD639431902D62600719F23 /* DataCourse.m */,
 				3FD639251902D57900719F23 /* Images.xcassets */,
 				3FD639111902D57900719F23 /* Supporting Files */,
 			);
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD6391B1902D57900719F23 /* AppDelegate.m in Sources */,
+				3FD639441902D62600719F23 /* DataCourse.m in Sources */,
 				3FD639211902D57900719F23 /* MasterViewController.m in Sources */,
 				3FD639171902D57900719F23 /* main.m in Sources */,
 				3FD639241902D57900719F23 /* DetailViewController.m in Sources */,

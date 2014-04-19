@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterViewController : UITableViewController
+{
+    NSMutableArray *courses;
+}
 
+@property (nonatomic, assign) NSMutableArray *courses;
 @end

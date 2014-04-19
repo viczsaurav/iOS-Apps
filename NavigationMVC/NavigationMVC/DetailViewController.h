@@ -8,9 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@class DataCourse;
+
+@interface DetailViewController : UIViewController {
+    IBOutlet UITextField *idField;
+    IBOutlet UITextField *descField;
+    IBOutlet UITextField *lecturerField;
+    DataCourse *editingCourse;
+}
 
 @property (strong, nonatomic) id detailItem;
+
+@property (weak, nonatomic) IBOutlet UITextField *idField;
+@property (weak, nonatomic) IBOutlet UITextField *descField;
+@property (weak, nonatomic) IBOutlet UITextField *lecturerField;
+@property (nonatomic, assign) DataCourse *editingCourse;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
