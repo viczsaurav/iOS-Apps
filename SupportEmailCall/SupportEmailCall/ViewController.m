@@ -17,6 +17,7 @@
 - (IBAction)emailSupport {
     MFMailComposeViewController *emailViewController = [MFMailComposeViewController new];
     emailViewController.mailComposeDelegate =self;
+    [emailViewController setToRecipients:@[@"support@me.com"]];
     [emailViewController setSubject:@"Support Required"];
     [emailViewController setMessageBody:@"Please Advice" isHTML: YES];
     [self presentViewController:emailViewController animated:YES completion:Nil];
@@ -27,7 +28,7 @@
 }
 
 - (IBAction)callSupport {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"98765432"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel: 98765432"]];
     
 }
 - (void)viewDidLoad0

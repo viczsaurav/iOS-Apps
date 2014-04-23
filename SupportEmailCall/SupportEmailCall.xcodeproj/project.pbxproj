@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5EBBE11907F0A0000A60F0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5EBBE01907F0A0000A60F0 /* MessageUI.framework */; };
 		3FD639521902F02000719F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD639511902F02000719F23 /* Foundation.framework */; };
 		3FD639541902F02000719F23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD639531902F02000719F23 /* CoreGraphics.framework */; };
 		3FD639561902F02000719F23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD639551902F02000719F23 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F5EBBE01907F0A0000A60F0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		3FD6394E1902F02000719F23 /* SupportEmailCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupportEmailCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD639511902F02000719F23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FD639531902F02000719F23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5EBBE11907F0A0000A60F0 /* MessageUI.framework in Frameworks */,
 				3FD639541902F02000719F23 /* CoreGraphics.framework in Frameworks */,
 				3FD639561902F02000719F23 /* UIKit.framework in Frameworks */,
 				3FD639521902F02000719F23 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		3FD639501902F02000719F23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F5EBBE01907F0A0000A60F0 /* MessageUI.framework */,
 				3FD639511902F02000719F23 /* Foundation.framework */,
 				3FD639531902F02000719F23 /* CoreGraphics.framework */,
 				3FD639551902F02000719F23 /* UIKit.framework */,
@@ -196,7 +200,7 @@
 		3FD639461902F02000719F23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ISS;
 				TargetAttributes = {
 					3FD6396E1902F02000719F23 = {
@@ -305,7 +309,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,7 +347,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -402,7 +404,6 @@
 		3FD639841902F02000719F23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SupportEmailCall.app/SupportEmailCall";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -425,7 +426,6 @@
 		3FD639851902F02000719F23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SupportEmailCall.app/SupportEmailCall";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -460,6 +460,7 @@
 				3FD639821902F02000719F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD639831902F02000719F23 /* Build configuration list for PBXNativeTarget "SupportEmailCallTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				3FD639851902F02000719F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
