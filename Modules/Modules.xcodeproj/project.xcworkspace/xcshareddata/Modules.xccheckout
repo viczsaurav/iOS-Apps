@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E668ECB6-38E4-4044-B0F6-FD97BEB038E6</string>
+	<string>C8DA5977-55B5-4DC5-BF18-69CD2FCC04F0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Modules</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>BD48DC58-3B9B-4161-B999-D7F14B26006B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOS-Apps</string>
+			<string>Modules</string>
 		</dict>
 	</array>
 </dict>

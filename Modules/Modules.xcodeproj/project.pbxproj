@@ -22,6 +22,7 @@
 		3F5EBC131907F54F000A60F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5EBBF21907F54F000A60F0 /* UIKit.framework */; };
 		3F5EBC1B1907F54F000A60F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EBC191907F54F000A60F0 /* InfoPlist.strings */; };
 		3F5EBC1D1907F54F000A60F0 /* ModulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EBC1C1907F54F000A60F0 /* ModulesTests.m */; };
+		3F5EBC281907F5D6000A60F0 /* ModulesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EBC271907F5D6000A60F0 /* ModulesModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		3F5EBC181907F54F000A60F0 /* ModulesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModulesTests-Info.plist"; sourceTree = "<group>"; };
 		3F5EBC1A1907F54F000A60F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F5EBC1C1907F54F000A60F0 /* ModulesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModulesTests.m; sourceTree = "<group>"; };
+		3F5EBC261907F5D6000A60F0 /* ModulesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulesModel.h; sourceTree = "<group>"; };
+		3F5EBC271907F5D6000A60F0 /* ModulesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulesModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				3F5EBC001907F54F000A60F0 /* Main.storyboard */,
 				3F5EBC031907F54F000A60F0 /* MasterViewController.h */,
 				3F5EBC041907F54F000A60F0 /* MasterViewController.m */,
+				3F5EBC261907F5D6000A60F0 /* ModulesModel.h */,
+				3F5EBC271907F5D6000A60F0 /* ModulesModel.m */,
 				3F5EBC061907F54F000A60F0 /* DetailViewController.h */,
 				3F5EBC071907F54F000A60F0 /* DetailViewController.m */,
 				3F5EBC091907F54F000A60F0 /* Images.xcassets */,
@@ -257,6 +262,7 @@
 				3F5EBBFF1907F54F000A60F0 /* AppDelegate.m in Sources */,
 				3F5EBC051907F54F000A60F0 /* MasterViewController.m in Sources */,
 				3F5EBBFB1907F54F000A60F0 /* main.m in Sources */,
+				3F5EBC281907F5D6000A60F0 /* ModulesModel.m in Sources */,
 				3F5EBC081907F54F000A60F0 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

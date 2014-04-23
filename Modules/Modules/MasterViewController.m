@@ -2,7 +2,7 @@
 //  MasterViewController.m
 //  Modules
 //
-//  Created by student on 23/4/14.
+//  Created by Saurav on 23/4/14.
 //  Copyright (c) 2014 NUS. All rights reserved.
 //
 
@@ -10,12 +10,15 @@
 
 #import "DetailViewController.h"
 
+#import "ModulesModel.h"
+
 @interface MasterViewController () {
     NSMutableArray *_objects;
 }
 @end
 
 @implementation MasterViewController
+@synthesize modulesModel;
 
 - (void)awakeFromNib
 {
@@ -26,6 +29,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self setTitle:@"Modules"];
+    modulesModel = [ModulesModel new];
+    _objects = modulesModel.arrayData;
+    
+    
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
