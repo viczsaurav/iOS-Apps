@@ -8,7 +8,7 @@
             <connections>
                 <outlet property="password" destination="0xC-Cg-mfu" id="J3i-hm-qzg"/>
                 <outlet property="userID" destination="Ygc-Sa-6n5" id="MJ1-3g-uO7"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sj4-Qx-VYe"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

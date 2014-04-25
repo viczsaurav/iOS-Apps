@@ -15,9 +15,9 @@
 {
     // Override point for customization after application launch.
     
-    LoginViewController *loginViewController = [[LoginViewController alloc]
-                                                initWithNibName:@"LoginViewController" bundle:nil];
-    self.window.rootViewController = loginViewController;
+    //LoginViewController *loginViewController = [[LoginViewController alloc]
+                                                //initWithNibName:@"LoginViewController" bundle:nil];
+    //self.window.rootViewController = loginViewController;
     return YES;
 }
 							
