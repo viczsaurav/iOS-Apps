@@ -2,7 +2,7 @@
 //  ViewController.m
 //  StockQuoteWS
 //
-//  Created by Ouh Eng Lieh on 2/1/14.
+//  Created by Saurav on 4/24/14.
 //  Copyright (c) 2014 Ouh Eng LIeh. All rights reserved.
 //
 
@@ -17,8 +17,35 @@ NSURLConnection *conn;
 
 @implementation ViewController
 @synthesize stockDate, stockLastPrice, stockSymbol, activityIndicatorView,buffer;
+@synthesize parser;
+
 - (IBAction) lookup {
-    
+    NSString *symbol = stockSymbol.text;
+    NSString *soapRequest = [NSString stringWithFormat:
+                             @"<?xml version \"1.0\" encoding=\"utf-8\"?"
+                             "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\""
+                             "xmlns:xsd=\"http://w3.org/2001/XMLSchema\""
+                             "xmlns:soap=\"http://schemas./xmlsoap.org/soap/envelope/\">"
+                             "<soap:Body>"
+                             "<GetQuote xmlns=\"http://www.webserviceX.NET/\">"
+                             "<symbol>%@</symbol>"
+                             "</GetQuote>"
+                             "</soap:Body>"
+                             "</soap:Envelope>", symbol];
+    NSLog(@"SoapRequest is %@",soapRequest);
+    NSURL *url = [NSURL URLWithString:@"http://www.webservicex.net/stockquote.asmx"];
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+    [req addValue:@"text/xml;charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    [req addValue:@"http://www.webserviceX.NET/GetQuote" forHTTPHeaderField:@"SOAPAction"];
+    NSString *msgLength = [NSString stringWithFormat:@"%lu",(unsigned long)[soapRequest length]];
+    [req addValue:msgLength forHTTPHeaderField:@"Content-Length"];
+    [req setHTTPMethod:@"POST"];
+    [req setHTTPBody:[soapRequest dataUsingEncoding:NSUTF8StringEncoding]];
+    conn = [[NSURLConnection alloc] initWithRequest:req delegate:self];
+    if (conn) {
+        self.buffer =[NSMutableData data];
+    }
+    [activityIndicatorView startAnimating];
 }
 
 -(void) connection:(NSURLConnection *) connection didReceiveResponse:(NSURLResponse *) response {
@@ -32,7 +59,17 @@ NSURLConnection *conn;
 }
 
 -(void) connectionDidFinishLoading:(NSURLConnection *) connection {
-	NSLog(@"Done with bytes %d", [buffer length]);
+	NSLog(@"Done with bytes %lu", (unsigned long)[buffer length]);
+    NSMutableString *theXML = [[NSMutableString alloc] initWithBytes:[buffer mutableBytes]
+                                                            length:[buffer length]
+                                                            encoding:NSUTF8StringEncoding];
+    [theXML replaceOccurrencesOfString:@"&lt;" withString:@"<" options:0 range:NSMakeRange(0, [theXML length])];
+    [theXML replaceOccurrencesOfString:@"&gt" withString:@">" options:0 range:NSMakeRange(0, [theXML length])];
+    NSLog(@"Soap Response is %@",theXML);
+    [buffer setData:[theXML dataUsingEncoding:NSUTF8StringEncoding]];
+    self.parser = [[NSXMLParser alloc] initWithData:buffer];
+    [parser setDelegate:self];
+    [parser parse];
 	[activityIndicatorView stopAnimating];
     
 }

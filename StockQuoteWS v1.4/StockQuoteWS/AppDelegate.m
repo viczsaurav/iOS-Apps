@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  StockQuoteWS
 //
-//  Created by Ouh Eng Lieh on 2/1/14.
+//  Created by Saurav on 4/24/14.
 //  Copyright (c) 2014 Ouh Eng LIeh. All rights reserved.
 //
 

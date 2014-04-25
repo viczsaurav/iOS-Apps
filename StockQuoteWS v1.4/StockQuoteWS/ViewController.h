@@ -2,7 +2,7 @@
 //  ViewController.h
 //  StockQuoteWS
 //
-//  Created by Ouh Eng Lieh on 2/1/14.
+//  Created by Saurav on 4/24/14.
 //  Copyright (c) 2014 Ouh Eng LIeh. All rights reserved.
 //
 
@@ -15,6 +15,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *stockSymbol;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 @property (strong, nonatomic) NSMutableData *buffer;
+
+@property (strong,nonatomic) NSXMLParser *parser;
 
 - (IBAction) lookup;
 
