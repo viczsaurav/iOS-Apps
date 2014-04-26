@@ -3,7 +3,7 @@
 //  StockQuoteWS
 //
 //  Created by Saurav on 4/24/14.
-//  Copyright (c) 2014 Ouh Eng LIeh. All rights reserved.
+//  Copyright (c) 2014 NUS. All rights reserved.
 //
 
 #import "AppDelegate.h"
