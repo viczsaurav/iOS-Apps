@@ -15,6 +15,7 @@
 - (IBAction) search {
     NSString *myKey = @"AIzaSyClcCWkl8gXfsPOlKVzICzlt-29Ylh-288";
     NSString *cxValue = @"018003853024400480720:ser6p4utiqq";
+    
     [activityIndicatorView startAnimating];
     self.buffer = [NSMutableData data];
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -22,8 +23,11 @@
                              sessionWithConfiguration:defaultConfigObject
                              delegate:self
                              delegateQueue:[NSOperationQueue mainQueue]];
-    [[session dataTaskWithURL:[NSURL URLWithString:
-                               [NSString stringWithFormat:@"https://www.googleapis.com/customsearch/v1?key=%@&cx=%@&q=%@&alt=json",myKey,cxValue,searchString.text]]] resume];
+    [[session dataTaskWithURL:
+      [NSURL URLWithString:
+       [NSString stringWithFormat:@"https://www.googleapis.com/customsearch/v1?key=%@&cx=%@&q=%@&alt=json",myKey,cxValue,searchString.text]
+       ]
+      ] resume];
    
 }
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
