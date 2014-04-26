@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GoogleSearchViewController : UIViewController {
+@interface GoogleSearchViewController : UIViewController <NSURLSessionDataDelegate>{
 	UITextField *searchString;
 	UIActivityIndicatorView *activityIndicatorView;
     NSMutableData *buffer;
