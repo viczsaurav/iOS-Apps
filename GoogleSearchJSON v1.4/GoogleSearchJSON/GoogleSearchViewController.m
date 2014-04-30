@@ -63,7 +63,7 @@ didCompleteWithError:(NSError *)error
     for (NSDictionary *item in items) {
         //Get title for each photo
         NSString *title = [item   objectForKey:@"title"];
-        self.searchResults.searchTitles addObject:(title.length > 0 ? title :@"Untitled")];
+        [self.searchResults.searchTitles addObject:(title.length > 0 ? title :@"Untitled")];
         NSString *link = [item objectForKey:@"link"];
         [self.searchResults.searchLinks addObject:link];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"SwitchResultView" object:nil];
