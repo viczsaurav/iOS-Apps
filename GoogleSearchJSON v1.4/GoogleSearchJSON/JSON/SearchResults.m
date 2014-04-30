@@ -2,8 +2,8 @@
 //  SearchResults.m
 //  GoogleSearchJSON
 //
-//  Created by Ouh Eng Lieh on 5/6/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Saurav on 4/27/14.
+//  Copyright 2014 NUS. All rights reserved.
 //
 
 #import "SearchResults.h"

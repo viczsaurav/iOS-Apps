@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  GoogleSearchJSON
 //
-//  Created by Ouh Eng Lieh on 2/1/14.
-//  Copyright (c) 2014 Ouh Eng LIeh. All rights reserved.
+//  Created by Saurav on 4/27/14.
+//  Copyright 2014 NUS. All rights reserved.
 //
 
 #import "AppDelegate.h"

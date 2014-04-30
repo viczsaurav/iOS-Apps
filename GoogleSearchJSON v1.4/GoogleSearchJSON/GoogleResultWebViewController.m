@@ -2,8 +2,8 @@
 //  WebView.m
 //  GoogleSearchJSON
 //
-//  Created by Ouh Eng Lieh on 4/7/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Saurav on 4/27/14.
+//  Copyright 2014 NUS. All rights reserved.
 //
 
 #import "GoogleResultWebViewController.h"

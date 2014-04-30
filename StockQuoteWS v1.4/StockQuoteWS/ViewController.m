@@ -25,6 +25,7 @@
 @synthesize activityIndicatorView,buffer,parser;
 
 - (IBAction) lookup {
+    [stockSymbol resignFirstResponder];
     NSString *symbol = stockSymbol.text;
     NSString *soapRequest = [NSString stringWithFormat:
                              @"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
@@ -137,5 +138,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
