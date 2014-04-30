@@ -7,10 +7,11 @@
 //
 
 #import "GoogleSearchViewController.h"
+#import "SearchResults.h"
 
 @implementation GoogleSearchViewController
 
-@synthesize searchString, activityIndicatorView, buffer;
+@synthesize searchString, activityIndicatorView, buffer, searchResults;
 
 - (IBAction) search {
     NSString *myKey = @"AIzaSyClcCWkl8gXfsPOlKVzICzlt-29Ylh-288";
@@ -51,8 +52,23 @@ didCompleteWithError:(NSError *)error
 
 }
 
+// Custom
 - (void) processResponse:(NSMutableData *)data {
-	
+	NSError *e = nil;
+    NSDictionary *results = [NSJSONSerialization JSONObjectWithData:data
+                                                            options:NSJSONReadingMutableContainers
+                                                              error:&e];
+    NSArray *items = [results objectForKey:@"items"];
+    NSLog(@"Array items : %@",items);
+    for (NSDictionary *item in items) {
+        //Get title for each photo
+        NSString *title = [item   objectForKey:@"title"];
+        self.searchResults.searchTitles addObject:(title.length > 0 ? title :@"Untitled")];
+        NSString *link = [item objectForKey:@"link"];
+        [self.searchResults.searchLinks addObject:link];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"SwitchResultView" object:nil];
+        
+    }
     
 }
 

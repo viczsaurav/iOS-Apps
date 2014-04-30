@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SearchResults;
 
 @interface GoogleSearchViewController : UIViewController <NSURLSessionDataDelegate>{
 	UITextField *searchString;
@@ -17,6 +18,7 @@
 @property(strong, nonatomic) IBOutlet UITextField *searchString;
 @property(strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 @property(strong, nonatomic) NSMutableData *buffer;
+@property(strong, nonatomic) SearchResults *searchResults;
 
 - (IBAction) search;
 - (void) processResponse:(NSMutableData *) data;

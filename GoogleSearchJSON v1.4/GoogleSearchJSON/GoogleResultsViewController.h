@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SearchResults;
+
 
 @interface GoogleResultsViewController : UITableViewController {
 	UITableView *resultView;
 }
 @property(strong, nonatomic) IBOutlet UITableView *resultView;
+@property(strong, nonatomic) SearchResults *searchResults;
 
 @end

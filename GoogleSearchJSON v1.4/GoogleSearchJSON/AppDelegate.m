@@ -7,13 +7,77 @@
 //
 
 #import "AppDelegate.h"
+#import "SearchResults.h"
+#import "GoogleResultsViewController.h"
+#import "GoogleResultWebViewController.h"
+#import "GoogleSearchViewController.h"
 
 @implementation AppDelegate
+@synthesize searchResults;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.searchResults = [SearchResults new];
+    UITabBarController *tb = (UITabBarController *) self.window.rootViewController;
+    
+    GoogleSearchViewController *toViewController0 = [tb.viewControllers objectAtIndex:0];
+    toViewController0.searchResults = self.searchResults;
+    
+    GoogleResultsViewController *toViewController1 =[[[tb.viewControllers objectAtIndex:1]
+                                                      childViewControllers] objectAtIndex:0];
+    toViewController1.searchResults = self.searchResults;
+    
+    GoogleResultWebViewController *toViewController2 = [tb.viewControllers objectAtIndex:2];
+    toViewController2.searchResults = self.searchResults;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(switchWebView)
+                                                 name:@"SwitchWebView" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(switchResultView)
+                                                 name:@"SwitchResultView" object:nil];
     return YES;
+}
+
+- (void) switchWebView {
+    UITabBarController *tb = (UITabBarController *)self.window.rootViewController;
+    UIView *fromView = tb.selectedViewController.view;
+    UIView *toView = [[tb.viewControllers objectAtIndex:2] view];
+    
+    //Transition using Page curl
+    [UIView transitionFromView:fromView
+                        toView:toView duration:0.5
+                       options:(2 > tb.selectedIndex?
+                                UIViewAnimationOptionTransitionCurlUp :
+                                UIViewAnimationOptionTransitionCurlDown)
+                    completion:^(BOOL finished){
+                        if (finished) {
+                            tb.selectedIndex =2;
+                        }
+                    }
+     ];
+}
+
+-(void) switchResultView {
+    UITabBarController *tb = (UITabBarController *)self.window.rootViewController;
+    UIView *fromView = tb.selectedViewController.view;
+    UIView *toView = [[tb.viewControllers objectAtIndex:1] view];
+    
+    //Transitioning using a Page curl
+    [UIView transitionFromView:fromView
+                        toView:toView duration:0.5
+                       options:(1 > tb.selectedIndex?
+                                UIViewAnimationOptionTransitionCurlUp :
+                                UIViewAnimationOptionTransitionCurlDown)
+                    completion:^(BOOL finished){
+                        if (finished) {
+                            tb.selectedIndex =1;
+                        }
+                    }
+     ];
+
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

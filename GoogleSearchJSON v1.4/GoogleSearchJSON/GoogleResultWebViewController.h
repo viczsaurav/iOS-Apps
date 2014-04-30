@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SearchResults;
 
 @interface GoogleResultWebViewController : UIViewController <UIWebViewDelegate> {
 	UIWebView *webView;
 }
 @property(strong, nonatomic) IBOutlet UIWebView *webView;
+@property(strong, nonatomic) SearchResults *searchResults;
 @end

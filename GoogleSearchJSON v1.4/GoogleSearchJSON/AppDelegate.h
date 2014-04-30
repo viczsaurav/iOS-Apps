@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SearchResults;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate> 
+@interface AppDelegate : NSObject <UIApplicationDelegate, UIToolbarDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property(strong,nonatomic) SearchResults *searchResults;
+
+//Selector method for our notifications
+
+-(void) switchWebView;
+-(void) switchResultView;
 
 @end
