@@ -43,6 +43,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     NSString *urlAddress = searchResults.selectedLink;
+    addressField.text = urlAddress;
     
     //Create a url object
     NSURL *url = [NSURL URLWithString:urlAddress];
@@ -52,7 +53,7 @@
     
     //load the request in the UIWebView
     [webView loadRequest:requestObj];
-    [addressField setText:urlAddress];
+    
 }
 
 /*
