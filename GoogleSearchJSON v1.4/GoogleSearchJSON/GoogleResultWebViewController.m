@@ -11,7 +11,7 @@
 
 @implementation GoogleResultWebViewController
 
-@synthesize webView, searchResults;
+@synthesize webView, searchResults, addressField;
 
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -52,6 +52,7 @@
     
     //load the request in the UIWebView
     [webView loadRequest:requestObj];
+    [addressField setText:urlAddress];
 }
 
 /*
@@ -73,6 +74,43 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+#pragma mark - Updating the UI
+- (void)updateButtons
+{
+    self.forward.enabled = self.webView.canGoForward;
+    self.back.enabled = self.webView.canGoBack;
+}
+
+- (void)updateAddress:(NSURLRequest*)request
+{
+    NSURL* url = [request mainDocumentURL];
+    NSString* absoluteString = [url absoluteString];
+    self.addressField.text = absoluteString;
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    [self updateAddress:request];
+    return YES;
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    [self updateButtons];
+}
+- (void)webViewDidFinishLoad:(UIWebView *)View
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    [self updateButtons];
+    [self updateAddress:[webView request]];
+}
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    [self updateButtons];
 }
 
 

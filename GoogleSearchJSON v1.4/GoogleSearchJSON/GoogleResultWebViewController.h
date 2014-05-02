@@ -12,6 +12,11 @@
 @interface GoogleResultWebViewController : UIViewController <UIWebViewDelegate> {
 	UIWebView *webView;
 }
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *back;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *refresh;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *forward;
 @property(strong, nonatomic) IBOutlet UIWebView *webView;
 @property(strong, nonatomic) SearchResults *searchResults;
+@property (strong, nonatomic) UITextField *addressField;
+
 @end
