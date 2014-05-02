@@ -135,7 +135,6 @@
                                 <rect key="frame" x="0.0" y="59" width="320" height="374"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </webView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2m1-yS-AWi">
@@ -154,7 +153,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                             <connections>
-                                                <outlet property="delegate" destination="c7I-1W-OlT" id="DNP-1O-okd"/>
+                                                <action selector="reload" destination="fla-4F-p4f" eventType="editingDidEndOnExit" id="IjU-95-skK"/>
                                             </connections>
                                         </textField>
                                     </barButtonItem>
