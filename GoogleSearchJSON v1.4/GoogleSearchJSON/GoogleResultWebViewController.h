@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *forward;
 @property(strong, nonatomic) IBOutlet UIWebView *webView;
 @property(strong, nonatomic) SearchResults *searchResults;
-@property (strong, nonatomic) UITextField *addressField;
+
+@property (strong, nonatomic) IBOutlet UITextField *addressField;
+
 
 @end

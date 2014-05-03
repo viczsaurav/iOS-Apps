@@ -24,6 +24,7 @@
 		712A8FB11875A30D0061B893 /* GoogleResultWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712A8F9B1875A30D0061B893 /* GoogleResultWebViewController.m */; };
 		712A8FB21875A30D0061B893 /* GoogleSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712A8F9E1875A30D0061B893 /* GoogleSearchViewController.m */; };
 		712A8FB91875A30D0061B893 /* SearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 712A8FAF1875A30D0061B893 /* SearchResults.m */; };
+		E7D0DF381914819E00508510 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D0DF371914819E00508510 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		712A8F9F1875A30D0061B893 /* GoogleSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleSearchViewController.h; sourceTree = "<group>"; };
 		712A8FAE1875A30D0061B893 /* SearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResults.h; path = JSON/SearchResults.h; sourceTree = "<group>"; };
 		712A8FAF1875A30D0061B893 /* SearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResults.m; path = JSON/SearchResults.m; sourceTree = "<group>"; };
+		E7D0DF361914819E00508510 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E7D0DF371914819E00508510 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 		712A8F561875A0DB0061B893 = {
 			isa = PBXGroup;
 			children = (
+				E7D0DF361914819E00508510 /* Reachability.h */,
+				E7D0DF371914819E00508510 /* Reachability.m */,
 				712A8F681875A0DB0061B893 /* GoogleSearchJSON */,
 				712A8F8A1875A0DB0061B893 /* GoogleSearchJSONTests */,
 				712A8F611875A0DB0061B893 /* Frameworks */,
@@ -267,6 +272,7 @@
 				712A8FB21875A30D0061B893 /* GoogleSearchViewController.m in Sources */,
 				712A8FB11875A30D0061B893 /* GoogleResultWebViewController.m in Sources */,
 				712A8F731875A0DB0061B893 /* AppDelegate.m in Sources */,
+				E7D0DF381914819E00508510 /* Reachability.m in Sources */,
 				712A8FB01875A30D0061B893 /* GoogleResultsViewController.m in Sources */,
 				712A8FB91875A30D0061B893 /* SearchResults.m in Sources */,
 				712A8F6F1875A0DB0061B893 /* main.m in Sources */,

@@ -88,6 +88,7 @@
 {
     NSURL* url = [request mainDocumentURL];
     NSString* absoluteString = [url absoluteString];
+    NSLog(@"%@",absoluteString);
     self.addressField.text = absoluteString;
 }
 
@@ -102,7 +103,8 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [self updateButtons];
 }
-- (void)webViewDidFinishLoad:(UIWebView *)View
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     [self updateButtons];
