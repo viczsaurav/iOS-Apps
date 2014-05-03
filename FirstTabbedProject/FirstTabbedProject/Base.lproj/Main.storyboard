@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Dhh-4c-glu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Dhh-4c-glu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller - Second-->
@@ -87,82 +87,12 @@
                 <viewController id="Dhh-4c-glu" customClass="LoginViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tsN-PX-uoW"/>
                     <connections>
-                        <segue destination="8YX-ce-x5E" kind="modal" id="upu-Sm-ctm"/>
+                        <segue destination="8YX-ce-x5E" kind="modal" id="7id-jZ-cxi"/>
                     </connections>
                 </viewController>
-                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bOg-U7-9yO">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iLogin App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-PR-gVT">
-                            <rect key="frame" x="0.0" y="20" width="320" height="26"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.33227807190000003" green="0.64454513229999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="26" id="7OT-rU-W1H"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="highlightedColor" red="0.34595144589999999" green="0.33878132789999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iw3-az-e05">
-                            <rect key="frame" x="39" y="94" width="67" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rc-bO-ebw">
-                            <rect key="frame" x="20" y="145" width="86" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckL-Ej-DNf">
-                            <rect key="frame" x="138" y="90" width="162" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSs-6U-xLU">
-                            <rect key="frame" x="138" y="141" width="162" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                        </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9X-8E-MeZ">
-                            <rect key="frame" x="75" y="211" width="151" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <state key="normal" title="Login">
-                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" red="0.62274694119999996" green="0.80321288189999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="HQj-PR-gVT" secondAttribute="trailing" id="2dt-ah-EZW"/>
-                        <constraint firstAttribute="trailing" secondItem="D9X-8E-MeZ" secondAttribute="trailing" constant="94" id="3h8-gG-Ao7"/>
-                        <constraint firstItem="HQj-PR-gVT" firstAttribute="top" secondItem="bOg-U7-9yO" secondAttribute="top" constant="20" symbolic="YES" id="6XG-3v-QkT"/>
-                        <constraint firstItem="1Rc-bO-ebw" firstAttribute="leading" secondItem="bOg-U7-9yO" secondAttribute="leading" constant="20" symbolic="YES" id="7LC-Jr-xUC"/>
-                        <constraint firstItem="1Rc-bO-ebw" firstAttribute="trailing" secondItem="iw3-az-e05" secondAttribute="trailing" id="GXP-iw-aYa"/>
-                        <constraint firstItem="ckL-Ej-DNf" firstAttribute="trailing" secondItem="NSs-6U-xLU" secondAttribute="trailing" id="U18-EZ-Wkj"/>
-                        <constraint firstItem="1Rc-bO-ebw" firstAttribute="top" secondItem="iw3-az-e05" secondAttribute="bottom" constant="30" id="ZjM-KU-J5Z"/>
-                        <constraint firstItem="D9X-8E-MeZ" firstAttribute="top" secondItem="NSs-6U-xLU" secondAttribute="bottom" constant="40" id="acg-gA-Jc4"/>
-                        <constraint firstItem="ckL-Ej-DNf" firstAttribute="leading" secondItem="iw3-az-e05" secondAttribute="trailing" constant="32" id="ggC-ZB-Zca"/>
-                        <constraint firstItem="D9X-8E-MeZ" firstAttribute="leading" secondItem="bOg-U7-9yO" secondAttribute="leading" constant="75" id="ja6-FQ-QzZ"/>
-                        <constraint firstItem="NSs-6U-xLU" firstAttribute="top" secondItem="ckL-Ej-DNf" secondAttribute="bottom" constant="21" id="o5d-et-zMC"/>
-                        <constraint firstItem="NSs-6U-xLU" firstAttribute="leading" secondItem="ckL-Ej-DNf" secondAttribute="leading" id="oRZ-QB-RBO"/>
-                        <constraint firstAttribute="trailing" secondItem="ckL-Ej-DNf" secondAttribute="trailing" constant="20" symbolic="YES" id="wA5-m1-fbR"/>
-                        <constraint firstItem="ckL-Ej-DNf" firstAttribute="top" secondItem="HQj-PR-gVT" secondAttribute="bottom" constant="44" id="yN5-De-9du"/>
-                        <constraint firstItem="HQj-PR-gVT" firstAttribute="leading" secondItem="bOg-U7-9yO" secondAttribute="leading" id="zrv-zC-Ddc"/>
-                        <constraint firstItem="D9X-8E-MeZ" firstAttribute="top" secondItem="1Rc-bO-ebw" secondAttribute="bottom" constant="45" id="zx4-YL-Idy"/>
-                    </constraints>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </view>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlA-z0-S4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265" y="182"/>
+            <point key="canvasLocation" x="-255" y="180"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">

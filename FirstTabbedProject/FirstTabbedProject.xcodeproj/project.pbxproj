@@ -429,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstTabbedProject/FirstTabbedProject-Prefix.pch";
 				INFOPLIST_FILE = "FirstTabbedProject/FirstTabbedProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -442,6 +443,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstTabbedProject/FirstTabbedProject-Prefix.pch";
 				INFOPLIST_FILE = "FirstTabbedProject/FirstTabbedProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -506,6 +508,7 @@
 				3F5EBC691907FA47000A60F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5EBC6A1907FA47000A60F0 /* Build configuration list for PBXNativeTarget "FirstTabbedProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +517,7 @@
 				3F5EBC6C1907FA47000A60F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
